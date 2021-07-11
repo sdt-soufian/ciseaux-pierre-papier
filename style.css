@@ -78,7 +78,8 @@ h1{
 #logo{
     flex: 1 0 20%;
     background-image: url('images/vs.png');
-    background-position: center;
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: auto;
+    margin-bottom: 20px;
 }

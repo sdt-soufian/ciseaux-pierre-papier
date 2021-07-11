@@ -28,7 +28,7 @@ btnClick.forEach(elet =>{
             IDmachine.appendChild(imageM);
             console.log(Rimg);
             (elet.value == Rimg) ? scoreH.innerText = 'score : '+cmptH++ : scoreM.innerText = 'score : '+cmptM++;
-        }, 4500)
+        }, 2500)
     });
 })
 

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple jeux ciseaux pierre papier</title>
+</head>
+
+<body>
+    <div class="conteneur flex">
+        <h1>
+            ciseaux pierre papier
+        </h1>
+        <div class="resultat flex div-style">
+            <div class="machine">
+                <h2>Machine</h2>
+                <h2 id="scoreM">Score : 0</h2>
+                <div id="img-machine">
+                   
+                </div>
+            </div>
+            <div id="logo">
+                
+            </div>
+            <div class="humain">
+                <h2>Humain</h2>
+                <h2 id="scoreH">Score : 0</h2>
+                <div id="img-humain">
+
+                </div>
+            </div>
+        </div>
+        <div class="btn-jeux flex div-style">
+            <button class="btn-style" value="1">
+                <img src="images/image1.png" alt="hand">
+            </button>
+            <button class="btn-style" value="2">
+                <img src="images/image2.png" alt="hand">
+            </button>
+            <button class="btn-style" value="3">
+                <img src="images/image3.png" alt="hand">
+            </button>
+        </div>
+        <div id="reset">
+            <button id="btn-reset">
+                <img src="images/reset.png" alt="reset">
+            </button>
+        </div>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

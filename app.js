@@ -7,6 +7,7 @@ var reset = document.getElementById('btn-reset');
 var Bscore = document.getElementById('scores');
 var scoreBlock = document.getElementById('div-score');
 var btn_close = document.getElementById('close');
+var DeleteScores = document.getElementById('supp');
 var imageH = document.createElement('img');
 var imageM = document.createElement('img');
 var ListScore = document.createElement('ul');
@@ -23,6 +24,7 @@ ListScore.classList.add('list-style');
 reset.addEventListener('click', supprimer);
 Bscore.addEventListener('click', best_score);
 btn_close.addEventListener('click', fermer);
+DeleteScores.addEventListener('click', videStorage);
 
 
 function Rshow(){
@@ -64,7 +66,6 @@ function best_score(){
     for(let i=0; i<tab.length; i++){
         var li = document.createElement('li');
         li.textContent = tab[i];
-        //console.log(list[i]);
         ListScore.appendChild(li);
     }
     scoreBlock.appendChild(ListScore);
@@ -74,4 +75,9 @@ function best_score(){
 
 function fermer(){
     scoreBlock.style.left = `${-1*100}%`;
+}
+
+function videStorage(){
+    localStorage.clear();
+    ListScore.innerHTML = ' ';
 }

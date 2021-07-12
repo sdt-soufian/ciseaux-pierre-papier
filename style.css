@@ -127,7 +127,7 @@ h1{
 }
 .active{
     transition-property: left;
-    transition-duration: 1s;
+    transition-duration: 0.85s;
     transition-timing-function: linear;
 }
 .list-style{
@@ -145,4 +145,14 @@ h1{
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
+}
+#supp{
+    background-image: url('images/delete.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    position: fixed;
 }
